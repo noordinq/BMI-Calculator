@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <h1>BMI Calculator</h1>
+        <form action="http://localhost:3000/process-bmi" method="POST">
+            Enter your Weight(kgs): 
+            <input type="number" name="weight" /> <br>
+            Enter your height(cm):
+            <input type="number" name="height" /> <br>
+            <button onclick="myBMI()">Calculate</button>
+        </form>  
+        <br>
+        <p id="answer"> </p>
+
+        <script>
+            function myBMI() {
+                document.getElementById("answer").innerHTML = finalbmi
+            }
+        </script>
+    </body>    
+</html>
